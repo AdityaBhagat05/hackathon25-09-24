@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animalPharmacy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesF.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+        <div class="container">
+            <!-- Logo and Website Name -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="./img/FINALWEBLOGO.png" alt="Logo" width="80" height="65" class="me-2">
+                <h1 class="mb-0 fs-4">Paws & Claws.</h1>
+            </a>
+    
+            <!-- Toggler for mobile view -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Navbar Links and Search -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav fs-5">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="store.html" class="nav-link">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cart.html" class="nav-link">Cart</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center ms-3">
+                    <a href="login.html" class="me-2">
+                        <button class="btn btn-primary">Login</button>
+                    </a>
+                    <a href="signup.html" class="me-2">
+                        <button class="btn btn-secondary">Signup</button>
+                    </a>
+                    <a href="imgtotxt/imgtotxt.html" class="me-2">
+                        <button class="btn btn-tertiary">Image Reader</button>
+                    </a>
+                </div>
+                <form class="d-flex ms-3">
+                    <input class="form-control me-2" type="search" id="search" placeholder="Search products..." aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="Top">
+        <div class="container">
+            <img src="img/img1.jpg" alt="group of kittens">
+            <div class="centered-Text">Welcome to paws and claws, where convenience meets care!</div>
+        </div>
+    </section>
+    <section class="someAnimals">
+        <div class="container">
+            <a href="store.html"><img src="img/logo1.png" alt="Photo of dog" class="animalLogo"></a>
+            <a href="store.html"><img src="img/logo2.png" alt="Photo of cat" class="animalLogo"></a>
+            <a href="store.html"><img src="img/logo4.png" alt="Photo of bird" class="animalLogo"></a>
+            <a href="store.html"><img src="img/logo3.jpeg" alt="Photo of fish" class="animalLogo"></a>
+            <a href="store.html"><img src="img/turtlesi.jpg" alt="Photo of turtle" class="animalLogo"></a>
+            <a href="store.html"><img src="img/rabbit.png" alt="Photo of rabbit" class="animalLogo"></a>
+        </div>
+    </section>
+    <section class="someMedicines">
+        <div class="container">
+            <div class="product" data-pet="dog" data-price="10.5">
+                <img src="productImages/carprofen.jpg" alt="Carprofen">
+                <h3>Carprofen</h3>
+                <p>Non-steroidal anti-inflammatory drug for dogs. Helps reduce pain and inflammation.</p>
+                <p>Price: $10.5</p>
+            </div>
+            <div class="product" data-pet="dog" data-price="11">
+                <img src="productImages/prednisone.jpg" alt="Prednisone">
+                <h3>Prednisone</h3>
+                <p>Steroid for dogs. Used to treat allergies, inflammation, and autoimmune diseases.</p>
+                <p>Price: $11</p>
+            </div>
+            <div class="product" data-pet="dog" data-price="11.5">
+                <img src="productImages/Enrofloxacin.jpeg" alt="Enrofloxacin">
+                <h3>Enrofloxacin</h3>
+                <p>Broad-spectrum antibiotic for dogs. Effective against various bacterial infections.</p>
+                <p>Price: $11.5</p>
+            </div>
+            <div class="product" data-pet="dog" data-price="12">
+                <img src="productImages/Cephalexin.jpg" alt="Cephalexin">
+                <h3>Cephalexin</h3>
+                <p>Antibiotic for dogs. Commonly used to treat skin infections.</p>
+                <p>Price: $12</p>
+            </div>
+            <p><a href="store.html" class="store-link">To see more, click here!</a></p>
+        </div>
+    </section>
+    
+    <section class="happyCustomers">
+        <div class="testimonies">
+            <img src="img/homepg1.jpg" alt="Happy Customers">
+            <p><i>"Ever since, we started shopping on paws and claws, we are in a world of convenience!No more travelling to a vet clinic" </i></p>
+        </div>
+        <div class="testimonies">
+            <img src="img/img2.jpg" alt="Happy Customers">
+            <p><i>"Excellent quality products and no service delay"</i></p>
+        </div>
+        <div class="testimonies">
+            <img src="img/imglast3.jpg" alt="Happy Customers">
+            <p><i>"Have been shopping with them for the past 2 years. no complaints so far"</i></p>
+        </div>
+    </section>
+    <footer>
+        <a href="">About us</a>
+        <a href="">Back to top</a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
