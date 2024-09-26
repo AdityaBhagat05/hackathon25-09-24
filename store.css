@@ -6,50 +6,125 @@ body {
     color: #333;
 }
 
+/* Navbar styles */
 .navbar {
-    background-color: #007bff;
-    overflow: hidden;
-    padding: 10px;
+    background-color: #f8f9fa; /* Light background */
+    padding: 0.5rem 1rem; /* Adjust padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.navbar .logo {
-    float: left;
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    color: #000; /* Brand color */
+}
+
+.navbar-brand h1 {
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 20px; /* Space between items */
+}
+
+.navbar-nav .nav-link {
+    color: #333; /* Dark text */
+    padding: 0.5rem 1rem;
     text-decoration: none;
 }
 
-.navbar .search-container {
-    float: right;
+.navbar-nav .nav-link:hover {
+    color: #007bff; /* Hover color */
 }
 
-.navbar input[type="text"] {
-    padding: 6px;
-    margin-top: 8px;
-    font-size: 17px;
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+
+    color: #007bff; /* Highlight active link */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Blue login button */
     border: none;
-    border-radius: 4px 0 0 4px;
-}
-
-.navbar .search-btn {
-    padding: 6px 10px;
-    margin-top: 8px;
-    margin-right: 16px;
-    background: white;
-    color: #007bff;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-    border-radius: 0 4px 4px 0;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.navbar .search-btn:hover {
-    background-color: #007bff;
     color: white;
+    padding: 0.5rem 1rem;
 }
 
+.btn-secondary {
+    background-color: #6c757d; /* Grey signup button */
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+
+.form-inline {
+    display: flex;
+    align-items: center;
+}
+
+.form-control {
+    margin-right: 10px;
+    width: 200px;
+}
+
+/* Other existing styles... */
+
+/* Top Section */
+.Top {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.Top img {
+    width: 100%;
+    height: auto;
+}
+
+.centered-Text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Some Animals Section */
+.someAnimals {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.someAnimals .animalLogo {
+    width: 100px;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.someAnimals .animalLogo:hover {
+    transform: scale(1.1);
+}
+
+/* Some Medicines Section */
 .container {
     display: flex;
     margin-top: 20px;
@@ -160,17 +235,60 @@ input[type="range"]::-moz-range-thumb {
     margin: 0;
 }
 
-.button-primary {
-    padding: 10px 15px;
-    border: none;
-    background-color: #007bff;
-    color: white;
-    font-size: 14px;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s;
+/* Store Link */
+.store-link {
+    align-self: flex-end;
+    font-size: 1.2rem;
+    color: #007bff;
+    text-decoration: none;
+    margin-top: 2rem;
 }
 
-.button-primary:hover {
-    background-color: #0056b3;
+.store-link:hover {
+    text-decoration: underline;
+}
+
+/* Happy Customers Section */
+.happyCustomers {
+    padding: 2rem 0;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.happyCustomers .testimonies {
+    display: inline-block;
+    width: 30%;
+    margin: 1%;
+    text-align: center;
+}
+
+.happyCustomers .testimonies img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.happyCustomers .testimonies p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #f1f1f1;
 }
